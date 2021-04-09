@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="mystylesheet" rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!--Box Icon -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Dewi Anggraini</title>
+        <link rel="shortcut icon" href="img/Dewi pokemon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!--Header -->
+        <header class="header-logo">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div>
+                    <a href="index.html" class="nav__logo">Dewi Anggraini</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav_list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="bg-img">
+                <!--Home -->
+                <section class="home" id="home">
+                    <div class="home-container bd-grid">
+                        <div class="home-data">
+                            <div class="home-img">
+                                <img src="img/Dewi Anggraini.jpg" alt="Foto Dewi">
+                            </div>
+
+                            <h1 class="home-name">Dewi Anggraini</h1>
+                            <span class="home-position">Head of Administration</span>
+                            
+                            <div class="home-medsos">
+                                <a href="https://github.com/Dewii7" class="home-medsos-link" target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://www.linkedin.com/in/dewianggraini7/" class="home-medsos-link" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://twitter.com/dwrn7" class="home-medsos-link" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            </div>
+                            <br>
+
+                            <!--Dark mode -->
+                            <div class="dark-mode">
+                                <button class="btn btn-light" onclick="swapStyle('./css/style.css')">Light</button>
+                                <button class="btn btn-dark" onclick="swapStyle('./css/style2.css')">Dark</button>
+                            </div>
+
+                            <script type="text/javascript">
+
+                                var setTheme = localStorage.getItem('theme')
+                                console.log('theme:', setTheme)
+
+                                if (setTheme == null){
+                                    swapStyle('./css/style.css')
+                                }else{
+                                    swapStyle(setTheme)
+                                }
+
+                                function swapStyle(sheet){
+                                    document.getElementById('mystylesheet').href = sheet
+                                    localStorage.setItem('theme', sheet)
+                                }
+                            </script>
+                        </div>
+                        <!--Button -->
+                        <a download="" href="document/Dewi Anggraini - Resume.pdf" class="button home-button" target="_blank">Download CV</a>
+                    </div>
+                </section>
+            </div>    
+
+            <!--About Me -->
+            <section class="about section" id="about">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-container bd-grid">
+                    <div class="about-data">
+                        <p class="about-description">My name is Dewi Anggraini. I am twenty-nine years old. I graduated from a vocational high school majoring in Computer and Network Engineering. I am currently working in a company that is engaged in public transportation services where i performed full-cycle accounting duties, month-end close procedures and assisted with budgeting and forecasting on a monthly basis. I am a person who can work well as part of a team and myself. I am also a hard worker, and want to learn</p>
+                    </div>
+                        
+                    <div>
+                        <div class="about-information" id="input-left">
+                            <h3 class="about-information-title">Information</h3>
+                            
+                            <div class="about-information-data">
+                                <i class='bx bx-user about-information-icon'></i>
+                                <span>Dewi Anggraini</span>
+                            </div>
+                            
+                            <div class="about-information-data">
+                                <i class='bx bx-cake about-information-icon'></i>
+                                <span>15 September 1992</span>
+                            </div>
+
+                            <div class="about-information-data">
+                                <i class='bx bx-phone about-information-icon'></i>
+                                <span>0852-3812-3430</span>
+                            </div>
+    
+                            <div class="about-information-data">
+                                <i class='bx bx-envelope about-information-icon'></i>
+                                <span>goddess.guy@gmail.com</span>
+                            </div>
+
+                            <div class="about-information-data">
+                                <i class='bx bx-home about-information-icon'></i>
+                                <span>Komplek Bukit Berlian Kel. Seketeng Kec. Sumbawa - 84313</span>
+                            </div>
+                        </div> 
+
+                        <!--Skills -->
+                        <div class="skills-information" id="input-right">
+                            <div class="skills-container bd-grid">
+                                <div class="skills-content">
+                                    <h3 class="skills-subtitle">Languages</h3>
+                                    
+                                    <div class="skills-data">
+                                        <span class="skills-name">Indonesian</span>
+                                        <span class="skills-number">99%</span>
+                                        <span class="skills-bar skills-indonesia"></span>
+                                    </div>
+            
+                                    <div class="skills-data">
+                                        <span class="skills-name">English</span>
+                                        <span class="skills-number">70%</span>
+                                        <span class="skills-bar skills-english"></span>
+                                    </div>
+            
+                                    <div class="skills-data">
+                                        <span class="skills-name">Cantonese</span>
+                                        <span class="skills-number">70%</span>
+                                        <span class="skills-bar skills-cantonese"></span>
+                                    </div>
+                                </div>
+            
+                                <div class="skills-content">
+                                    <h3 class="skills-subtitle">Skills</h3>
+            
+                                    <div class="skills-data">
+                                        <span class="skills-name">Networking</span>
+                                        <span class="skills-number">80%</span>
+                                        <span class="skills-bar skills-networking"></span>
+                                    </div>
+            
+                                    <div class="skills-data">
+                                        <span class="skills-name">Microsoft Office</span>
+                                        <span class="skills-number">85%</span>
+                                        <span class="skills-bar skills-office"></span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                        
+                </div>
+            </section>
+
+            <!--Education -->
+            <section class="education section" id="education">
+                <h2 class="section-title">Education</h2>
+                    
+                    <div class="education-container" bd-grid>
+                        <div class="education-content">
+                            <div>
+                                <h3 class="education-year">2007 - 2010</h3>
+                                <span class="education-school">SMK N 1 Sumbawa Besar</span>
+                            </div>
+
+                            <div class="education-time">
+                                <span class="education-rounder"></span>
+                                <span class="education-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-divisi">Networking</h3>
+                                <span class="education-major">Teknik Komputer & Jaringan</span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-year">2006 - 2007</h3>
+                                <span class="education-school">SMP N 4 Pekanbaru</span>
+                            </div>
+
+                            <div class="education-time">
+                                <span class="education-rounder"></span>
+                                <span class="education-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-divisi"></h3>
+                                <span class="education-specialty"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-year">2004 - 2006</h3>
+                                <span class="education-school">SMP N 207 Jakarta Barat</span>
+                            </div>
+
+                            <div class="education-time">
+                                <span class="education-rounder"></span>
+                                <span class="education-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-divisi"></h3>
+                                <span class="education-specialty"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-year">1998 - 2004</h3>
+                                <span class="education-school">SDN 13 Mer-Ut Jakarta Barat</span>
+                            </div>
+
+                            <div class="education-time">
+                                <span class="education-rounder"></span>
+                                <span class="education-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-divisi"></h3>
+                                <span class="education-specialty"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-year">1997 - 1998</h3>
+                                <span class="education-school">TK Mawar BPPT Jakarta Barat</span>
+                            </div>
+
+                            <div class="education-time">
+                                <span class="education-rounder"></span>
+                                <span class="education-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="education-divisi"></h3>
+                                <span class="education-specialty"></span>
+                            </div>
+                        </div>    
+                    </div>
+            </section>
+
+            <!--Works -->
+            <section class="works section" id="works">
+                <h2 class="section-title">Portfolio</h2>
+
+                    <div class="works-container" bd-grid>
+                        <div class="works-content">
+                            <i class='bx bx-building works-icon'></i>
+                            <h3 class="works-title">CV. Panca Sari</h3>
+                            <p class="works-description">2016 - Present</p>
+                            <br>
+                            <p class="works-description">Head of Administration</p>
+                        </div>
+
+                        <div class="works-content">
+                            <i class='bx bx-building works-icon'></i>
+                            <h3 class="works-title">CV. Purnama Sari</h3>
+                            <p class="works-description">2011 - 2016</p> 
+                            <br>
+                            <p class="works-description">Head of Administration</p>
+                        </div>
+
+                        <div class="works-content">
+                            <i class='bx bx-building works-icon'></i>
+                            <h3 class="works-title">CV. Sumo Sejati</h3>
+                            <p class="works-description">2010 - 2011</p> 
+                            <br>
+                            <p class="works-description">Administration Staff</p>
+                        </div>
+                    </div>        
+            </section>
+            
+            <!--Contact --> 
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+
+                    <div class="contact-container bd-grid">
+                        <form action="" class="contact-form">
+                            <div class="contact-inputs">
+                                <input type="text" placeholder="Name" class="contact-input">
+                                <input type="mail" placeholder="user@example.com" class="contact-input">
+                            </div>
+
+                            <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact-input"></textarea>
+                    
+                            <input type="submit" value="Send Message" class="button contact-button">   
+                        </form>         
+                                
+                        <div>
+                            <div class="contact-info">
+                                <h3 class="contact-subtitle">Call me</h3>
+                                <span class="contact-text">+62 852-3812-3430</span>
+                            </div>
+
+                            <div class="contact-info">
+                                <h3 class="contact-subtitle">E-mail</h3>
+                                <span class="contact-text">goddess.guy@gmail.com</span>
+                            </div>
+
+                            <div class="contact-info">
+                                <h3 class="contact-subtitle">Location</h3>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.0071520377164!2d117.43332301433449!3d-8.498684288369537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcb93bb3c0cb779%3A0xb5fd737309e4b183!2sKomplek%20Bukit%20Berlian!5e0!3m2!1sid!2sid!4v1617784231548!5m2!1sid!2sid" width="200" height=65" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <!--Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+                <p class="footer-description">Thank you for coming to my personal website</p>    
+
+                <div class="footer-sosmed">
+                    <a href="https://www.facebook.com/dewi159" class="footer-link" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/dewii7" class="footer-link" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/6285238123430" class="footer-link" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+
+                <p class="footer-copy">&copy 2021 - All right reserved</p>
+            </div>
+        </footer>
+
+        <!--Main Js -->
+        <script src="./js/main.js"></script>
+   
+    </body>
+</html>
